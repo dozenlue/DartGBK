@@ -1,17 +1,19 @@
-A library for Dart developers.
-
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+This is a dart encoding library for GBK.
+Ported from an exsiting flutter library
+gbk2utf8: https://github.com/best-flutter/gbk2utf8
+The orignial library can be used in flutter applications only,
+This port makes it can be used in any dart env.
 
 ## Usage
 
-A simple usage example:
+Global defined encoding 'gbk' can be used to read/write files:
 
 ```dart
 import 'package:dart_gbk/dart_gbk.dart';
 
 main() {
-  var awesome = new Awesome();
+  File file =File('path/to/file');
+  String contents = file.readAsStringSync(encoding: gbk);
 }
 ```
 
@@ -19,4 +21,4 @@ main() {
 
 Please file feature requests and bugs at the [issue tracker][tracker].
 
-[tracker]: http://example.com/issues/replaceme
+[tracker]: https://github.com/dozenlue/DartGBK/issues
