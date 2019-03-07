@@ -2,7 +2,7 @@ name: dart_gbk
 description: A starting point for Dart libraries or applications.
 version: 0.1.0
 homepage: https://github.com/dozenlue/DartGBK
-author: Dozen Lue
+author: Dozen Lue <dozenlue@qq.com>
 
 environment:
   sdk: '>=2.0.0 <3.0.0'
